@@ -53,7 +53,7 @@ public class VantagePointTree<M extends Element<M>> implements Serializable{
 			return null;
 		Node n = new Node();
 		n.data = points.get(j);
-		n.size = 1;
+		n.size = 1; 
 		if (i == j)
 			return n;
 		int p = Partition.select(n.data, points, i, j - 1);
